@@ -1,0 +1,21 @@
+data = napoje_po_reklamie <- read.csv("C:/Users/KrystianPC/Desktop/Statystyka_i_Algebra/napoje_po_reklamie.csv", sep=";")
+
+mean_pepsi = mean(data$pepsi)
+mean_fanta = mean(data$fanta)
+mean_zywiec = mean(data$zywiec)
+mean_regionalne = mean(data$regionalne)
+mean_okocim = mean(data$okocim)
+mean_cola = mean(data$cola)
+mean_lech = mean(data$lech)
+
+V1 = as.vector(data$pepsi)
+V2 = as.vector(data$fanta)
+mean_pepsi = mean(V1)
+mean_fanta = mean(V2)
+
+mean_fanta
+mean_pepsi
+
+wzrost = Wzrost <- read.csv("C:/Users/KrystianPC/Desktop/Statystyka_i_Algebra/Wzrost.csv", header=FALSE)
+wzrost = as.data.frame(t(wzrost))
+
